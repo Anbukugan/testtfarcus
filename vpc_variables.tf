@@ -1,3 +1,15 @@
+variable access_key {
+  description = "AWS Acc access key"
+  type = string
+  sensitive = true
+}
+
+variable secret_key {
+  description = "AWS Acc secret  key"
+  type = string
+  sensitive = true
+}
+
 variable vpc_name {
   description = "Name tag of VPC"
   type = list(string)
