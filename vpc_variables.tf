@@ -38,7 +38,7 @@ variable enable_dns_hostnames {
   default = true
 }
 
-variable tags {
+variable tag {
   type = map(string)
   default = {}
 }
