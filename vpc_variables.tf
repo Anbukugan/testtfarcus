@@ -12,30 +12,30 @@ variable secret_key {
 
 variable vpc_name {
   description = "Name tag of VPC"
-  type = list(string)
+  type = string
 }
 
 variable vpc_cidr {
   description = "CIDR Range of VPC CIDR"
-  type = list(string)
+  type = string
 }
 
 variable instance_tenancy {
   description = "The tenancy of the VPC"
-  default = ["default"]
-  type = list(string)
+  default = "default"
+  type = string
 }
 
 variable enable_dns_support {
   description = "Enable/Diasble for DNS support"
-  type = list(bool)
-  default = [true]
+  type = bool
+  default = true
 }
 
 variable enable_dns_hostnames {
   description = "Enable/Diasble for DNS Hostnames"
-  type = list(bool)
-  default = [true]
+  type = bool
+  default = true
 }
 
 variable tags {
